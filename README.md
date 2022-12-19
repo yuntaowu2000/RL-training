@@ -26,3 +26,7 @@ Use pre-trained models for inference:
 
 ## Environment
 Unity 2022.1.6f1 with [ml-agents release 19](https://github.com/Unity-Technologies/ml-agents/tree/release_19_docs).  
+
+## Project Paper & Presentation
+
+Under PaperAndPresentation folder, the submitted paper and presentation files are included. Reuse for the course is not allowed.
