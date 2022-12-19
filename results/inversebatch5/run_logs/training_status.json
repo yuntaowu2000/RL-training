@@ -1,0 +1,89 @@
+{
+    "Evader": {
+        "checkpoints": [
+            {
+                "steps": 499992,
+                "file_path": "results\\inversebatch5\\Evader\\Evader-499992.onnx",
+                "reward": 895.3671760261059,
+                "creation_time": 1664210931.9465053,
+                "auxillary_file_paths": [
+                    "results\\inversebatch5\\Evader\\Evader-499992.pt"
+                ]
+            },
+            {
+                "steps": 999959,
+                "file_path": "results\\inversebatch5\\Evader\\Evader-999959.onnx",
+                "reward": 931.3405473232269,
+                "creation_time": 1664215087.2691534,
+                "auxillary_file_paths": [
+                    "results\\inversebatch5\\Evader\\Evader-999959.pt"
+                ]
+            },
+            {
+                "steps": 1000407,
+                "file_path": "results\\inversebatch5\\Evader\\Evader-1000407.onnx",
+                "reward": 931.3405473232269,
+                "creation_time": 1664215561.6108453,
+                "auxillary_file_paths": [
+                    "results\\inversebatch5\\Evader\\Evader-1000407.pt"
+                ]
+            }
+        ],
+        "elo": 1262.2961690128168,
+        "final_checkpoint": {
+            "steps": 1000407,
+            "file_path": "results\\inversebatch5\\Evader.onnx",
+            "reward": 931.3405473232269,
+            "creation_time": 1664215561.6108453,
+            "auxillary_file_paths": [
+                "results\\inversebatch5\\Evader\\Evader-1000407.pt"
+            ]
+        }
+    },
+    "Pursuer": {
+        "checkpoints": [
+            {
+                "steps": 499995,
+                "file_path": "results\\inversebatch5\\Pursuer\\Pursuer-499995.onnx",
+                "reward": 472.7082761526108,
+                "creation_time": 1664211295.35167,
+                "auxillary_file_paths": [
+                    "results\\inversebatch5\\Pursuer\\Pursuer-499995.pt"
+                ]
+            },
+            {
+                "steps": 999944,
+                "file_path": "results\\inversebatch5\\Pursuer\\Pursuer-999944.onnx",
+                "reward": 573.0416852980852,
+                "creation_time": 1664215561.4534101,
+                "auxillary_file_paths": [
+                    "results\\inversebatch5\\Pursuer\\Pursuer-999944.pt"
+                ]
+            },
+            {
+                "steps": 1000008,
+                "file_path": "results\\inversebatch5\\Pursuer\\Pursuer-1000008.onnx",
+                "reward": 573.0416852980852,
+                "creation_time": 1664215561.7770221,
+                "auxillary_file_paths": [
+                    "results\\inversebatch5\\Pursuer\\Pursuer-1000008.pt"
+                ]
+            }
+        ],
+        "elo": 1303.4552720042932,
+        "final_checkpoint": {
+            "steps": 1000008,
+            "file_path": "results\\inversebatch5\\Pursuer.onnx",
+            "reward": 573.0416852980852,
+            "creation_time": 1664215561.7770221,
+            "auxillary_file_paths": [
+                "results\\inversebatch5\\Pursuer\\Pursuer-1000008.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.11.0+cu113"
+    }
+}

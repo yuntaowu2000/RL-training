@@ -1,0 +1,51 @@
+# mlagents-learn <trainer-config-file> --env=<env_name> --run-id=batch-id
+# tensorboard --logdir results --port 6006
+behaviors:
+    Pursuer:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 512 
+            buffer_size: 5120
+            learning_rate_schedule: linear
+            learning_rate: 3.0e-4
+        network_settings:
+            hidden_units: 512
+            normalize: false
+            num_layers: 3
+            vis_encode_type: simple
+        max_steps: 1000000
+        time_horizon: 64    
+        summary_freq: 50000
+        reward_signals:
+            extrinsic:
+                strength: 1.0
+                gamma: 0.99 # Discount factor for future rewards coming from the environment.
+        self_play:
+          window: 10
+          play_against_latest_model_ratio: 0.5
+          save_steps: 20000 # Number of trainer steps between snapshots. team change happens at 5*save_steps
+          swap_steps: 2000 # Number of ghost steps between swapping the opponents policy with a different snapshot.
+    Evader:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 512 
+            buffer_size: 5120
+            learning_rate_schedule: linear
+            learning_rate: 3.0e-4
+        network_settings:
+            hidden_units: 512
+            normalize: false
+            num_layers: 3
+            vis_encode_type: simple
+        max_steps: 1000000
+        time_horizon: 64    
+        summary_freq: 50000
+        reward_signals:
+            extrinsic:
+                strength: 1.0
+                gamma: 0.99 # Discount factor for future rewards coming from the environment.
+        self_play:
+          window: 10
+          play_against_latest_model_ratio: 0.5
+          save_steps: 20000
+          swap_steps: 2000
